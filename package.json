@@ -7,10 +7,12 @@
   "scripts": {
     "dev": "gulp",
     "build": "gulp build --build",
-    "zip": "gulp deployZIP --build"
+    "zip": "gulp deployZIP --build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
+  "homepage": "https://latnove.github.io/bright-lights-gulp",
   "dependencies": {
     "gulp-cli": "^2.3.0"
   },
