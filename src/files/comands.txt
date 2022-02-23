@@ -1,0 +1,6 @@
+npm i - начало
+npm i webp-converter@2.2.3 - требует установки
+
+npm run dev - для разработки
+npm run build - для продакшина
+npm run zip - для создания zip-файла
