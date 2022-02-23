@@ -13,10 +13,8 @@ export const audioMusicPlayer = (className, musicLinks = []) => {
   const musicImageEl = document.querySelector(`.${className}__music-image`)
 
   // Картинки на паузу, пуск
-
-  // NDAY получение по атрибуту
-  const pauseImg = '../../img/audio-pause.svg'
-  const playImg = '../../img/audio-play.svg'
+  const pauseImg = audioPauseEl.getAttribute('data-pause-image')
+  const playImg = audioPauseEl.getAttribute('data-play-image')
 
   let timeInterval = null
   let currentMusic = 0 // так индекс первой ссылки - 0

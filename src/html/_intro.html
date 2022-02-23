@@ -8,17 +8,22 @@
       <div class="intro__audio-block">
         <audio class="intro__custom-audio custom-audio" controls>
           <source
-            src="files/audio/Konfuz_Kak_tak_propal_interes.mp3"
+            src="@audio/Konfuz_Kak_tak_propal_interes.mp3"
             type="audio/mpeg"
           />
           <source
-            src="files/audio/Konfuz_Kak_tak_propal_interes.ogg"
+            src="@audio/Konfuz_Kak_tak_propal_interes.ogg"
             type="audio/ogg; codecs=vorbis"
           />
         </audio>
 
         <div class="intro__audio audio">
-          <a href="#" class="audio__pause">
+          <a
+            href="#"
+            class="audio__pause"
+            data-pause-image="@img/audio-pause.svg"
+            data-play-image="@img/audio-play.svg"
+          >
             <!-- Должен быть первым для js файла -->
             <img src="@img/audio-play.svg" alt="audio pause" />
           </a>

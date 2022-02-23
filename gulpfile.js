@@ -26,6 +26,7 @@ import { js } from './gulp/tasks/js.js'
 import { images } from './gulp/tasks/images.js'
 import { otfToTtf, ttfToWoff, fontsStyle } from './gulp/tasks/fonts.js'
 import { zip } from './gulp/tasks/zip.js'
+import { audio } from './gulp/tasks/audio.js'
 
 // Наблюдатель за изменениями в файлах
 const watcher = () => {
@@ -40,7 +41,7 @@ const watcher = () => {
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle)
 
 // Основные задачи
-const mainTasks = gulp.parallel(fonts, copy, html, scss, js, images)
+const mainTasks = gulp.parallel(fonts, copy, html, scss, js, images, audio)
 
 // Автообновление браузера и файлов
 const browserWatch = gulp.parallel(watcher, server)
