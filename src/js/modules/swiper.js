@@ -35,13 +35,11 @@ export const swiper = className => {
   }
 
   prevEl.addEventListener('click', e => {
-    e.preventDefault()
     setAnimation(true)
     swiper.slidePrev()
   })
 
   nextEl.addEventListener('click', e => {
-    e.preventDefault()
     setAnimation(false)
     swiper.slideNext()
   })
