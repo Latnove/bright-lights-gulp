@@ -27,6 +27,19 @@
     font-size: 18px;
     line-height: 1.5em;
     position: relative;
+
+    &::before {
+      user-select: none;
+      content: '';
+      position: absolute;
+      top: 2.5px;
+      left: 0;
+      z-index: -1;
+      width: 103px;
+      height: 92px;
+      background: url('../img/preview-svg-ftext.svg');
+      opacity: 0.1;
+    }
   }
 
   &__line {
