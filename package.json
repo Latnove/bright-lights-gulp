@@ -14,8 +14,7 @@
   "license": "ISC",
   "homepage": "https://latnove.github.io/bright-lights-gulp",
   "dependencies": {
-    "gulp-cli": "^2.3.0",
-    "gulp-webp-html-nosvg": "^1.0.5"
+    "gulp-cli": "^2.3.0"
   },
   "devDependencies": {
     "browser-sync": "latest",
