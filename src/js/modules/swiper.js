@@ -6,6 +6,19 @@ export const swiper = className => {
     spaceBetween: 30,
     loop: true,
 
+    breakpoints: {
+      1201: {
+        slidesPerView: 3,
+      },
+      769: {
+        spaceBetween: 20,
+        slidesPerView: 2,
+      },
+      0: {
+        slidesPerView: 1,
+      },
+    },
+
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,

@@ -1,19 +1,60 @@
 .preview {
   &__container {
-    padding: 150px 0 0 0;
+    padding-top: 150px;
+
+    @media (max-width: 992px) {
+      padding-top: 135px;
+      max-width: 910px;
+    }
+    @media (max-width: 544px) {
+      padding-top: 95px;
+    }
+    @media (max-width: 320px) {
+      padding-top: 80px;
+    }
   }
 
   &__body {
+    font-size: 20px;
     width: 100%;
-    min-height: 315px;
-    border-radius: 30px 0px;
+    min-height: 15.75em;
+    border-radius: 1.5em 0px;
     border: 1px solid #fff;
-    padding: 0 40px;
-    margin: 0 0 85px 0;
+    padding: 0 2em;
+    margin: 0 0 4.25em 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 3em;
+
+    @media (max-width: 1600px) {
+      font-size: 19px;
+      padding: 0 2.25em;
+      gap: 2.8em;
+    }
+    @media (max-width: 1200px) {
+      font-size: 18px;
+    }
+    @media (max-width: 992px) {
+      font-size: 16px;
+      padding: 0 1.9em;
+      gap: 1.5em;
+      margin: 0 0 4.5em 0;
+    }
+    @media (max-width: 767px) {
+      margin: 0;
+      justify-content: space-around;
+      padding: 2em 1.6em;
+      min-height: 22em;
+    }
+    @media (max-width: 470px) {
+      flex-direction: column;
+      padding: 2em;
+      gap: 1.6em;
+    }
+    @media (max-width: 320px) {
+      gap: 1.4em;
+    }
   }
 
   &__content {
@@ -21,6 +62,26 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
+
+    @media (max-width: 1600px) {
+      width: 480px;
+      gap: 20px;
+    }
+    @media (max-width: 1200px) {
+      width: 494px;
+      gap: 15px;
+    }
+    @media (max-width: 992px) {
+      width: 420px;
+    }
+    @media (max-width: 767px) {
+      width: auto;
+      max-width: 55%;
+    }
+    @media (max-width: 470px) {
+      max-width: initial;
+      width: 100%;
+    }
   }
 
   &__text {
@@ -28,15 +89,28 @@
     line-height: 1.5em;
     position: relative;
 
+    @media (max-width: 1600px) {
+      font-size: 17px;
+    }
+    @media (max-width: 1200px) {
+      font-size: 16px;
+    }
+    @media (max-width: 992px) {
+      font-size: 15px;
+    }
+    @media (max-width: 470px) {
+      font-size: 14px;
+    }
+
     &::before {
       user-select: none;
       content: '';
       position: absolute;
-      top: 2.5px;
+      top: 0.138em;
       left: 0;
       z-index: -1;
-      width: 103px;
-      height: 92px;
+      width: 5.722em;
+      height: 5.111em;
       background: url('../img/preview-svg-ftext.svg');
       opacity: 0.1;
     }
@@ -57,8 +131,18 @@
       font-size: 18px;
       line-height: 1.5em;
       text-decoration: none;
-      padding: 0 0 12px 0;
+      padding: 0 0 0.66em 0;
       position: relative;
+
+      @media (max-width: 1600px) {
+        font-size: 17px;
+      }
+      @media (max-width: 544px) {
+        font-size: 16px;
+      }
+      @media (max-width: 470px) {
+        padding: 0 0 0.5em 0;
+      }
 
       &::after {
         content: '';
@@ -81,18 +165,59 @@
   }
 
   &__image {
-    width: 370px;
+    font-size: 20px;
+    width: 18.5em;
     position: relative;
+
+    @media (max-width: 1600px) {
+      font-size: 19px;
+    }
+    @media (max-width: 1200px) {
+      font-size: 18px;
+    }
+    @media (max-width: 992px) {
+      font-size: 16px;
+      min-width: 17.4em;
+    }
+    @media (max-width: 767px) {
+      width: auto;
+      max-width: 13em;
+      min-width: 13em;
+    }
+    @media (max-width: 470px) {
+      max-width: initial;
+      min-width: initial;
+      width: 90%;
+      max-width: 14em;
+      height: 18em;
+    }
+    @media (max-width: 320px) {
+      height: 14em;
+      max-width: 11em;
+    }
 
     img {
       position: absolute;
       width: 100%;
-      height: 480px;
+      height: 24em;
       object-fit: cover;
       border: 4px solid rgb(37, 37, 37);
       border-radius: 30px 0px;
       transform: translateY(-50%);
       top: 0;
+
+      @media (max-width: 992px) {
+        height: 25em;
+      }
+      @media (max-width: 767px) {
+        height: 18.5em;
+        border-radius: 25px 0px;
+      }
+      @media (max-width: 470px) {
+        transform: initial;
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }

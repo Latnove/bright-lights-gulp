@@ -50,12 +50,6 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-/* Упрощаем работу с изображениями */
-img {
-  max-width: 100%;
-  display: block;
-}
-
 /* Указываем понятную периодичность в потоке данных у article*/
 article > * + * {
   margin-top: 1em;
@@ -88,4 +82,25 @@ body {
 .container {
   max-width: 1110px;
   margin: 0 auto;
+
+  @media (max-width: 1600px) {
+    max-width: 960px;
+  }
+  @media (max-width: 1200px) {
+    max-width: 900px;
+  }
+  @media (max-width: 992px) {
+    max-width: initial;
+    padding: 0 30px;
+  }
+  @media (max-width: 767px) {
+    padding: 0 20px;
+  }
+  @media (max-width: 544px) {
+    padding: 0 15px;
+  }
+  @media (max-width: 320px) {
+    padding: 0 12px;
+    overflow: hidden;
+  }
 }
