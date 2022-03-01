@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 2em;
-    padding-top: 180px;
+    padding-top: 180px !important;
 
     @media (max-width: 1600px) {
       font-size: 17.6px;
@@ -19,27 +19,27 @@
       max-width: initial !important;
       justify-content: center;
       gap: 2em;
-      padding-top: 160px;
+      padding-top: 160px !important;
     }
     @media (max-width: 992px) {
       font-size: initial;
-      padding: 145px 0 0 0;
+      padding: 145px 0 0 0 !important;
       gap: 1.5em;
     }
     @media (max-width: 767px) {
-      padding: 130px 0 0 0;
+      padding: 130px 0 0 0 !important ;
     }
     @media (max-width: 544px) {
-      padding: 90px 0 0 0;
+      padding: 90px 0 0 0 !important;
       gap: 1.2em;
     }
     @media (max-width: 374px) {
       flex-direction: column;
       max-width: 240px !important;
-      padding-bottom: 60px;
+      padding-bottom: 60px !important;
     }
     @media (max-width: 320px) {
-      padding-bottom: 52px;
+      padding-bottom: 52px !important;
     }
   }
 
