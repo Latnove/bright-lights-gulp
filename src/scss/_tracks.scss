@@ -1,5 +1,8 @@
 .tracks {
-  overflow: hidden;
+  @media (max-width: 544px) {
+    overflow: hidden;
+  }
+
   &__container {
     padding-top: 180px !important;
 

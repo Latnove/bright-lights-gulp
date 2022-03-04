@@ -900,10 +900,6 @@ body {
   top: 0;
 }
 
-.tracks {
-  overflow: hidden;
-}
-
 .tracks__container {
   padding-top: 180px !important;
 }
@@ -3274,6 +3270,10 @@ body {
 
   .preview__link a {
     font-size: 16px;
+  }
+
+  .tracks {
+    overflow: hidden;
   }
 
   .tracks__container {
