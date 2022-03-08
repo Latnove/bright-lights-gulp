@@ -2773,7 +2773,9 @@ body {
 
   .navigation {
     display: block;
-    background: #2c2c2c;
+    background: rgba(44, 44, 44, 0.8);
+    -webkit-backdrop-filter: blur(7px);
+            backdrop-filter: blur(7px);
     position: fixed;
     top: 74px;
     right: -370px;
@@ -2783,12 +2785,9 @@ body {
     height: 100%;
     opacity: 0.97;
     overflow: auto;
-    border-left: #fff solid 1.5px;
-    border-right: #fff solid 1.5px;
-    border-top: #fff solid 1px;
-    -webkit-transition: right 0.55s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -o-transition: right 0.55s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition: right 0.55s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: right 0.475s cubic-bezier(0.68, 0, 0.265, 1.55);
+    -o-transition: right 0.475s cubic-bezier(0.68, 0, 0.265, 1.55);
+    transition: right 0.475s cubic-bezier(0.68, 0, 0.265, 1.55);
   }
 
   .navigation__list {

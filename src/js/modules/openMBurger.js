@@ -4,12 +4,15 @@ export const openMBurger = () => {
 
   menuBurgerEl.addEventListener('click', () => {
     menuBurgerEl.classList.toggle('open')
-    headerEl.classList.toggle('active-scroll')
 
     if (menuBurgerEl.classList.contains('open')) {
       document.body.style.overflow = 'hidden'
+      headerEl.classList.add('active-scroll')
     } else {
       document.body.style.overflow = 'initial'
+      setTimeout(() => {
+        headerEl.classList.remove('active-scroll')
+      }, 380)
     }
 
     if (
